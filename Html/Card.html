@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Madam ji’s Birthday Letter</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background-image: url(/Images/flower-themed-greeting-card-template-with-blank-paper-green-table-mockup-image_176841-51807.jpg);
+      background-size: 100% 100%;
+    }
+
+    .container {
+      position: relative;
+      margin-left: 355px;
+      margin-top:50px;
+      width: 720px;
+      height: 420px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .envelope {
+      background: #e66767;
+    
+      width: 100%;
+      height: 100%;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      overflow: visible;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .envelope.previewing:hover {
+      animation: wiggle 0.4s ease;
+    }
+
+    @keyframes wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      50% { transform: rotate(-2deg); }
+      75% { transform: rotate(1deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: #f08080;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      transform-origin: top center;
+      transition: transform 0.6s ease, opacity 0.6s ease;
+      z-index: 3;
+    }
+
+    .envelope.previewing .flap {
+      transform: rotateX(-150deg);
+    }
+
+    .envelope.revealed .flap {
+      opacity: 0;
+      pointer-events: none;
+    }
+.letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s ease;
+  z-index: 2;
+
+  background-image: url(/Images/pngtree-paper-sheet-with-white-flowers-and-a-brown-note-in-the-image_13370591.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* 🎯 Fully revealed state */
+.envelope.revealed .letter {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 70vh;
+  clip-path: none;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  opacity: 1;
+  pointer-events: auto;
+  animation: sparkle 1s ease-in-out forwards;
+}
+ .envelope.previewing .letter {
+      opacity: 1;
+    }
+
+    .message {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #1a0013;
+      white-space: pre-wrap;
+    }
+
+    @keyframes sparkle {
+      0% { box-shadow: none; }
+      100% { box-shadow: 0 0 30px #ffc0cb; }
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      animation: floatUp 2.5s ease-out forwards;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-150px) scale(1.5); opacity: 0; }
+    }
+
+    .trail {
+      position: fixed;
+      pointer-events: none;
+      animation: trailFade 1s ease-out forwards;
+      font-size: 18px;
+    }
+
+    @keyframes trailFade {
+      0% { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1.5); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="envelope" id="envelope">
+    <div class="flap"></div>
+    <div class="letter">
+      <div class="message">
+Dear Madam ji,
+
+On this special day of yours i just wanted to celebrate it for you so i did in my way 😅 hope i was able to do something for i would be grateful 😌,even it was not something near to celebration but that's all i was able to do until now , next time it would be much better 😅 and also Happy birthday to my closest friend , my supporter My madam ji 😌🎂🍨🍬.
+
+And to be very honest i enjoyed every moment with you until now even though it was just through screens but still it was awesome , beautiful and unimaginable 😅 and the most beautiful thing that happened to me last was meeting you and also that dance with even though i was clumsy but i was happy and i become more happy by seeing you happy  and i pray this will last forever where i would always by your side even when you are not happy , even when you are not in mood to talk and also i am ready for all your mood swings , anger , possession , jealousy and etc etc i just want you by side 😌(seems like i talked more about myself 😅)
+
+You’re more than just my best friend—you’re my anchor, my cheerleader, my favorite human. You light up even the smallest moments with your charm, and calling you “Madam ji” is my little way of saying you rule my heart in the most delightful way and as long as you are my madam ji you will be the only ruler of my heart 😌💖💗.
+
+I hope your this birthday brings laughter in your life where you can laugh by forgetting about your past even though i know it was painful for you but wasting your today for the past would be more painful, so laugh with all your might , enjoy every little moments of your life so you don't get any regret later, ease up yourself a bit, stressing over everything will not do anything good so enjoy your life in most delightful way 💟❣️💌
+
+Happy Birthday,Meri Madam ji. May god bless with you ever lasting happiness and i am sure he will 😌💗💖  
+Here’s to your dreams coming true and to new memories made with love.
+
+With all my heart,and love for you 😌🧿   
+By your sakha 😌😅💕
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const envelope = document.getElementById('envelope');
+  const flap = envelope.querySelector('.flap');
+
+  envelope.addEventListener('mouseenter', () => {
+    if (!envelope.classList.contains('revealed')) {
+      envelope.classList.add('previewing');
+    }
+  });
+
+  envelope.addEventListener('mouseleave', () => {
+    envelope.classList.remove('previewing');
+  });
+
+  envelope.addEventListener('click', () => {
+    envelope.classList.toggle('revealed');
+    envelope.classList.remove('previewing');
+
+    if (envelope.classList.contains('revealed')) {
+      flap.style.opacity = 0;
+      flap.style.pointerEvents = 'none';
+
+      for (let i = 0; i < 25; i++) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.textContent = '💗';
+        heart.style.left = Math.random() * window.innerWidth + 'px';
+        heart.style.top = Math.random() * window.innerHeight + 'px';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 3000);
+      }
+    } else {
+      flap.style.opacity = 1;
+      flap.style.pointerEvents = 'auto';
+    }
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+    trail.textContent = '💗';
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+    document.body.appendChild(trail);
+    setTimeout(() => trail.remove(), 1000);
+  });
+</script>
+
+</body>
+</html>
